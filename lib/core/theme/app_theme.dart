@@ -19,6 +19,7 @@ ThemeData appTheme() => ThemeData(
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
+          minimumSize: const Size(double.infinity, 48),
           backgroundColor: Colors.blueAccent,
           padding: const EdgeInsets.symmetric(vertical: 16),
           shape: RoundedRectangleBorder(
@@ -32,7 +33,6 @@ ThemeData appTheme() => ThemeData(
             color: Colors.white,
           ),
           bodyLarge: GoogleFonts.poppins(
-            fontWeight: FontWeight.w800,
             color: Colors.black,
             fontSize: 21,
           ),
